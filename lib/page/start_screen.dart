@@ -2,7 +2,7 @@ import 'package:flutter/material.dart';
 import 'package:gap/gap.dart';
 import 'package:google_fonts/google_fonts.dart';
 import 'package:rosul/constant/color.dart';
-import 'package:rosul/constant/image_string.dart';
+
 import 'package:rosul/constant/text_string.dart';
 import 'package:rosul/widget/bottom_bar_widget.dart';
 import 'package:rosul/widget/button_widget.dart';
