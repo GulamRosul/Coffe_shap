@@ -37,12 +37,20 @@ class HomeScreen extends StatelessWidget {
                   'Lacation',
                   style: GoogleFonts.sora(color: Appcolor.lighter),
                 ),
-                Text(
-                  'Bilzen Tanjungbalai',
-                  style: GoogleFonts.sora(
-                    color: Appcolor.normalActive,
-                    fontSize: 20,
-                  ),
+                Row(
+                  children: [
+                    Text(
+                      'Bilzen Tanjungbalai',
+                      style: GoogleFonts.sora(
+                        color: Appcolor.normalActive,
+                        fontSize: 20,
+                      ),
+                    ),
+                    Icon(
+                      Icons.keyboard_arrow_down,
+                      color: Appcolor.normalActive,
+                    ),
+                  ],
                 ),
               ],
             ),
