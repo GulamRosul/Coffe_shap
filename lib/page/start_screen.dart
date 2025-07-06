@@ -20,16 +20,14 @@ class StartScreen extends StatelessWidget {
           SizedBox(height: height, width: width),
           SizedBox(
             width: width,
-            child: Image.asset(startPageImage, fit: BoxFit.cover),
+            child: Image.asset('assets/image/image.png', fit: BoxFit.cover),
           ),
-
           Positioned(
             bottom: height * 0.05,
             child: SizedBox(
               width: width,
               child: Padding(
                 padding: EdgeInsets.symmetric(horizontal: width * 0.06),
-
                 child: Column(
                   mainAxisAlignment: MainAxisAlignment.center,
                   crossAxisAlignment: CrossAxisAlignment.center,
@@ -37,11 +35,8 @@ class StartScreen extends StatelessWidget {
                     Text(
                       startPageTitle,
                       style: GoogleFonts.sora(
-                        textStyle: TextStyle(
-                          fontSize: 35,
-                          color: whiteColor,
-                          fontWeight: FontWeight.w800,
-                        ),
+                        fontSize: 32,
+                        color: Appcolor.whiteColor,
                       ),
                       textAlign: TextAlign.center,
                     ),
@@ -49,12 +44,13 @@ class StartScreen extends StatelessWidget {
                     Text(
                       startPageSubTitle,
                       style: GoogleFonts.sora(
-                        textStyle: TextStyle(color: startPageSubTitleColor),
+                        fontSize: 15,
+                        color: Appcolor.startPageSubTitleColor,
                       ),
                       textAlign: TextAlign.center,
                     ),
                     Gap(20),
-                    ButtonWidget(title: 'Get Started'),
+                    ButtonWidget(title: getStarted),
                   ],
                 ),
               ),

@@ -1,5 +1,8 @@
 import 'dart:ui';
 
-Color whiteColor = Color(0xFFFFFFFF);
-Color startPageSubTitleColor = Color(0xFFA2A2A2);
-Color normal = Color(0xFFC67CE2);
+class Appcolor {
+  Appcolor();
+  static const Color whiteColor = Color(0xFFFFFFFF);
+  static const Color startPageSubTitleColor = Color(0xFFA2A2A2);
+  static const Color normal = Color(0xFFC67CE2);
+}

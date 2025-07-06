@@ -1,1 +1,4 @@
-const String startPageImage = 'assets/image/start_page/image.png';
+class ImagePath {
+  ImagePath();
+  static const String startPageImage = 'assets/image/image.png';
+}

@@ -12,16 +12,13 @@ class ButtonWidget extends StatelessWidget {
       height: 60,
       width: double.infinity,
       decoration: BoxDecoration(
-        color: normal,
+        color: Appcolor.normal,
         borderRadius: BorderRadius.circular(20),
       ),
       child: Center(
         child: Text(
           title,
-          style: GoogleFonts.sora(
-            textStyle: TextStyle(color: whiteColor),
-            fontSize: 26,
-          ),
+          style: GoogleFonts.sora(fontSize: 25, color: Appcolor.whiteColor),
         ),
       ),
     );
