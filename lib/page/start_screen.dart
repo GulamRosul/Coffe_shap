@@ -4,6 +4,7 @@ import 'package:google_fonts/google_fonts.dart';
 import 'package:rosul/constant/color.dart';
 import 'package:rosul/constant/image_string.dart';
 import 'package:rosul/constant/text_string.dart';
+import 'package:rosul/widget/bottom_bar_widget.dart';
 import 'package:rosul/widget/button_widget.dart';
 
 class StartScreen extends StatelessWidget {
@@ -50,7 +51,17 @@ class StartScreen extends StatelessWidget {
                       textAlign: TextAlign.center,
                     ),
                     Gap(20),
-                    ButtonWidget(title: getStarted),
+                    InkWell(
+                      onTap: () {
+                        Navigator.push(
+                          context,
+                          MaterialPageRoute(
+                            builder: (context) => BottomBarWidget(),
+                          ),
+                        );
+                      },
+                      child: ButtonWidget(title: getStarted),
+                    ),
                   ],
                 ),
               ),
